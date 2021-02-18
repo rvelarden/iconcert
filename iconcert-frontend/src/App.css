@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: helvetica;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  background: #4f2897;
+  opacity: .8;
+  height: 7rem;
+  padding: 1rem;
+}
+
+#header img {
+  height: 10rem;
+  width: center;
+}
+
+#collection {
+  margin: 2rem;
+}
+
+.card {
+  text-align: center;
+  border: rgb(13, 3, 26) solid 1px;
+  padding: 1rem;
+  width: 25rem;
+  height: 40rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #4e1b7e
+}
+
+.avatar {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
+button {
+  position: relative;
+  background-color: #6715aa;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+}
+
+.buttonContainer {
+  text-align: center;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  border: #117e6c solid 1px;
+  color: #138361;
+}
+
+/* .container {
+  padding: 4rem;
+  width: stretch;
+  height: auto;
+  background: #430c83;
+  opacity: .8;
+} */
+
+.add-form {
+  width: 80%
+}
+
+.submit {
+  position: relative;
+  background-color: #7a2fc0;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  font-family: helvetica;
+  margin: 3px;
+}
+
+.submit:hover {
+  background-color: whitesmoke;
+  border: #402899 solid 1px;
+  color: #400aa3;
+}
+
+
+.input-text {
+  border-radius: 5px;
+  height: 2rem;
+  width: 60%;
+  font-size: 18px;
+  font-family: helvetica;
+  margin: 3px;
+}
+
+.search-bar {
+  background-color: whitesmoke;
+  border: #402899 solid 1px;
+  color: #400aa3;
+  text-align: left;
+  font-size: 18px;
+  width: 25rem;
+  /* display: inline-grid; */
+  margin: 2rem 3rem;
+  margin-right: 12px;
+  
+}
+
+.search-bar-div {
+  background: #6715aa;
+}
+
+.button-add-concert {
+  align-self: center;
+  text-align: center;
+  border: #402899 solid 1px;
+  padding: 1rem;
+}
+
+.logo-iconcert {
+  color: #f6f4fa;
+  
+}
