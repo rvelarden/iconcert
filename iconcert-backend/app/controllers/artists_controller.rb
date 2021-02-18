@@ -23,6 +23,10 @@ class ArtistsController < ApplicationController
     def artist_params
         params.require(:artist).permit(:name, :image, :genre, :years_active)
     end 
+
+    def venue_params
+    end 
+    
     def concert_params
         params.require(:concert_dates).permit(:date, :artist_id, :venue_id)
     end 
