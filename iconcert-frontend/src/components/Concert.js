@@ -29,7 +29,8 @@ class Concert extends Component {
       <div className="slide2">
         <img style={{ width: "450px", height: "350px" }} src={this.props.artist.image} />
         <div className="slide2content">
-          <h3>Concert Date: {this.props.artist.concert_dates.map(concertDate => <div>{concertDate.date}</div>)}</h3>
+          {/* <h3>Concert Date: {this.props.artist.concert_dates.map(concertDate => <div>{concertDate.date}</div>)}</h3> */}
+          <h3>Concert Date: {this.props.artist.date}</h3>
           <h2>Genre: {this.props.artist.genre}</h2>
           <p>Years Active: {this.props.artist.years_active}</p>
           <button className="del-btn">Buy Tickets</button>

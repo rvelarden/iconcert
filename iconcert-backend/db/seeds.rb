@@ -11,7 +11,7 @@
 end 
 
 5.times do
-    Artist.create(image: "https://images.unsplash.com/photo-1557787163-1635e2efb160?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29uY2VydHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", name: Faker::Music.band, years_active: Faker::Number.decimal_part(digits: 2), genre: Faker::Music.genre)
+    Artist.create(image: "https://images.unsplash.com/photo-1557787163-1635e2efb160?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29uY2VydHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", name: Faker::Music.band, years_active: Faker::Number.decimal_part(digits: 2), genre: Faker::Music.genre, date: Faker::Date.forward(days: 23))
 end 
 
 5.times do

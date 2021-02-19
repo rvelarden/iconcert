@@ -6,10 +6,8 @@ class ArtistsController < ApplicationController
 
     def create
         artist = Artist.create(artist_params)
-        concert_date = ConcertDate.create(concert_params)
-        venue = Venue.create(concert_params)
         render json: artist, :include => :concert_dates
-
+        # byebug
     end 
 
     def destroy
@@ -18,17 +16,10 @@ class ArtistsController < ApplicationController
         render json: artist, :include => :concert_dates
     end 
 
-    private
-
+  
     def artist_params
-        params.require(:artist).permit(:name, :image, :genre, :years_active)
+        params.require(:artist).permit(:name, :image, :genre, :years_active, :date)
     end 
 
-    def venue_params
-    end 
-    
-    def concert_params
-        params.require(:concert_dates).permit(:date, :artist_id, :venue_id)
-    end 
 
 end
