@@ -21,13 +21,13 @@ class Concert extends Component {
     return (
     <div className="box-wrap">
       <div className="slide1">
-        <img style={{ width: "450px", height: "350px" }} src={this.props.artist.image} />
+        <img style={{ width: "450px", height: "350px", objectFit: "contain" }} src={this.props.artist.image} />
         <div className="slide1text">
           <h2>{this.props.artist.name}</h2>
         </div>
       </div>
       <div className="slide2">
-        <img style={{ width: "450px", height: "350px" }} src={this.props.artist.image} />
+        <img style={{ width: "450px", height: "350px", objectFit: "contain" }} src={this.props.artist.image} />
         <div className="slide2content">
           <h3>Concert Date: {this.props.artist.concert_dates.map(concertDate => <div>{concertDate.date}</div>)}</h3>
           <h2>Genre: {this.props.artist.genre}</h2>

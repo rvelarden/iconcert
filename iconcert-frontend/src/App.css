@@ -164,7 +164,8 @@ button:hover {
 
 .searchBox {
   position: absolute;
-  top: 50%;
+  margin-top: 15px;
+ 
   left: 50%;
   transform:  translate(-50%,50%);
   background: #2f3640;
