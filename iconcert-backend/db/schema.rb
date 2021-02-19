@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_02_16_025504) do
     t.string "image"
     t.string "years_active"
     t.string "genre"
+    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

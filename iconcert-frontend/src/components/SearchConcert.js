@@ -22,7 +22,7 @@ const Search = (props) => {
       <div className="searchBox">
         <input
          type="text"
-         placeholder={"Search Concert"}
+         placeholder={"Search Artist"}
          className="searchInput"
          onChange={(e) => props.searchBar(e.target.value)}
         />

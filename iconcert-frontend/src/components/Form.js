@@ -7,7 +7,7 @@ class Form extends Component {
     image: '',
     years_active: '',
     genre: '',
-    concert_dates: ''
+    date: ''
 
   }
 
@@ -19,7 +19,7 @@ class Form extends Component {
       image: this.state.image,
       years_active: this.state.years_active,
       genre: this.state.genre,
-      concert_dates: this.state.concert_dates
+      date: this.state.date 
     }
     // console.log(newConcert)
     let reqPack = {
@@ -48,7 +48,7 @@ class Form extends Component {
           <br/>
           <input onChange={(e)=>this.setState({genre: e.target.value})} type="text" name="image" placeholder="Enter genre" className="input-text"/>
           <br/>
-          <input onChange={(e)=>this.setState({concert_dates: e.target.value})} type="text" name="image" placeholder="Enter concert date" className="input-text"/>
+          <input onChange={(e)=>this.setState({date: e.target.value})} type="text" name="image" placeholder="Enter concert date" className="input-text"/>
           <br/>
           <input type="submit" name="submit" value="Submit" className="submit"/>
         </form>
